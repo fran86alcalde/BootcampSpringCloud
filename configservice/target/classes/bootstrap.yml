@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          # url de respositorio donde estan ubicados los yml de los proyectos
+          uri: https://github.com/speraignacio/BootcampSpringCloud
+          # especificamos donde estan los archivos de configuracion de nuestro proyecto
+          searchPaths: config-data
